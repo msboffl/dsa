@@ -1,0 +1,57 @@
+{
+  "commerceSkuType": "hardgood",
+  "availability": "OnlineAndStore",
+  "classification": {
+    "subclass": {
+      "id": "2014",
+      "name": "OTR MIC"
+    },
+    "class": {
+      "name": "OTR MICROWAVE",
+      "id": "777"
+    },
+    "department": {
+      "id": "4",
+      "name": "APPLIANCE"
+    }
+  },
+  "typeInfo": {
+    "definition": "Microwaves"
+  },
+  "name": {
+    "short": "Whirlpool - 1.7 Cu. Ft. Over-the-Range Microwave with 2 Speed fan - Stainless steel"
+  },
+  "channel": {
+    "code": "C",
+    "description": "Crossover"
+  },
+  "price": {
+    "currentPrice": 359.99
+  },
+  "homePurchasableOnline": "true",
+  "openBoxCondition": null,
+  "whatItIs": ["Major Appliance", "Microwave", "Over the Range Microwave"],
+  "skuId": "5900311",
+  "condition": {
+    "display": "New",
+    "subdisplay": null,
+    "type": "new"
+  },
+  "orderCode": "4",
+  "brand": "Whirlpool",
+  "buyingOptions": [
+    {
+      "description": "New"
+    },
+    {
+      "description": "Open-Box Excellent"
+    },
+    {
+      "description": "Open-Box Fair"
+    }
+  ],
+  "manufacturer": {
+    "name": "WHIRLPOOL (OUTLETS) 004",
+    "modelNumber": "WMH31017HS"
+  }
+}
