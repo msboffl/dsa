@@ -1,3 +1,3 @@
 # lc-gfg
 
-tsc bankSystem.ts --target ESNext --module ESNex
+tsc --target ESNext --module ESNex fileName.ts
