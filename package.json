@@ -1,0 +1,26 @@
+{
+  "name": "lc-gfg",
+  "version": "1.0.0",
+  "description": "Leetcode & GeeksForGeeks Solutions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msboffl/lc-gfg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msboffl/lc-gfg/issues"
+  },
+  "homepage": "https://github.com/msboffl/lc-gfg#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
