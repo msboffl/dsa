@@ -1,7 +1,7 @@
 {
   "name": "lc-gfg",
   "version": "1.0.0",
-  "description": "tsc --target ESNext --module ESNex fileName.ts",
+  "description": "Leetcode & GeeksForGeeks Solutions",
   "main": "index.js",
   "type": "module",
   "scripts": {
