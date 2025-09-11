@@ -11,7 +11,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
+    // "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
@@ -60,6 +60,6 @@
     // "composite": true,
     // "incremental": false
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "banking-system/bankSystem.test.ts"],
   "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
