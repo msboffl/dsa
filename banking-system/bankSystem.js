@@ -1,36 +1,39 @@
 class Bank {
-  balance;
-  constructor(balance) {
-    this.balance = balance.slice();
-  }
-  transfer(account1, account2, money) {
-    if (money < 0 || account1 < 0 || account2 < 0) return false;
-    const idx1 = account1 - 1;
-    const idx2 = account2 - 1;
-    if (idx1 >= this.balance.length || idx2 >= this.balance.length)
-      return false;
-    if (money > this.balance[idx1]) return false;
-    this.balance[idx1] -= money;
-    this.balance[idx2] += money;
-    return true;
-  }
-  deposit(account, money) {
-    const idx = account - 1;
-    if (account < 0 || money < 0 || idx >= this.balance.length) {
-      return false;
+    balance;
+    constructor(balance) {
+        this.balance = balance.slice();
     }
-    this.balance[idx] += money;
-    return true;
-  }
-  withdraw(account, money) {
-    const idx = account - 1;
-    if (account < 0 || money < 0 || idx >= this.balance.length) {
-      return false;
+    transfer(account1, account2, money) {
+        if (money < 0 || account1 < 0 || account2 < 0)
+            return false;
+        const idx1 = account1 - 1;
+        const idx2 = account2 - 1;
+        if (idx1 >= this.balance.length || idx2 >= this.balance.length)
+            return false;
+        if (money > this.balance[idx1])
+            return false;
+        this.balance[idx1] -= money;
+        this.balance[idx2] += money;
+        return true;
     }
-    if (money > this.balance[idx]) return false;
-    this.balance[idx] -= money;
-    return true;
-  }
+    deposit(account, money) {
+        const idx = account - 1;
+        if (account < 0 || money < 0 || idx >= this.balance.length) {
+            return false;
+        }
+        this.balance[idx] += money;
+        return true;
+    }
+    withdraw(account, money) {
+        const idx = account - 1;
+        if (account < 0 || money < 0 || idx >= this.balance.length) {
+            return false;
+        }
+        if (money > this.balance[idx])
+            return false;
+        this.balance[idx] -= money;
+        return true;
+    }
 }
 /**
  * Your Bank object will be instantiated and called as such:
