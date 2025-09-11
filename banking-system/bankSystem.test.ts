@@ -6,7 +6,4 @@ describe("Bank System", () => {
     const bank = new Bank([10, 20, 30]);
     expect(bank).toBeDefined();
   });
-
-  test
 });
-
