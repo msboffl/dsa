@@ -1,4 +1,4 @@
-class Bank {
+export class Bank {
   private balance: number[];
   constructor(balance: number[]) {
     this.balance = balance.slice();
@@ -11,9 +11,9 @@ class Bank {
 
     if (idx1 >= this.balance.length || idx2 >= this.balance.length)
       return false;
-    if (money > this.balance[idx1]) return false;
-    this.balance[idx1] -= money;
-    this.balance[idx2] += money;
+    if (money > this.balance[idx1]!) return false;
+    this.balance[idx1]! -= money;
+    this.balance[idx2]! += money;
     return true;
   }
 
@@ -22,7 +22,7 @@ class Bank {
     if (account < 0 || money < 0 || idx >= this.balance.length) {
       return false;
     }
-    this.balance[idx] += money;
+    this.balance[idx]! += money;
     return true;
   }
 
@@ -32,16 +32,10 @@ class Bank {
       return false;
     }
 
-    if (money > this.balance[idx]) return false;
-    this.balance[idx] -= money;
+    if (money > this.balance[idx]!) return false;
+    this.balance[idx]! -= money;
     return true;
   }
 }
 
-/**
- * Your Bank object will be instantiated and called as such:
- * var obj = new Bank(balance)
- * var param_1 = obj.transfer(account1,account2,money)
- * var param_2 = obj.deposit(account,money)
- * var param_3 = obj.withdraw(account,money)
- */
+

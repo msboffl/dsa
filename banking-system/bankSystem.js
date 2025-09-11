@@ -1,4 +1,4 @@
-class Bank {
+export class Bank {
     balance;
     constructor(balance) {
         this.balance = balance.slice();
@@ -35,10 +35,3 @@ class Bank {
         return true;
     }
 }
-/**
- * Your Bank object will be instantiated and called as such:
- * var obj = new Bank(balance)
- * var param_1 = obj.transfer(account1,account2,money)
- * var param_2 = obj.deposit(account,money)
- * var param_3 = obj.withdraw(account,money)
- */
